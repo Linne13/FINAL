@@ -11,15 +11,15 @@ namespace ConsoleApplication1
 
         public static bool Prime(int a)
         {
-            for (int i = 1; i < a * a; i++)
+            for (int i = 2; i < a / 2; i++)
             {
                 if (a % i == 2)
                 {
-                    return false;
+                    return true;
                 }
             }
 
-            return true;
+            return false;
         }
 
         
