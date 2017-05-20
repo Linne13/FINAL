@@ -17,6 +17,7 @@ namespace WindowsFormsApplication5
         Point prevPoint;
         List<Krug> krg;
         public int cnt = 0;
+        public Pen pen = new Pen(Color.Green);
 
         public Form1()
         {
@@ -65,7 +66,7 @@ namespace WindowsFormsApplication5
             krg = new List<Krug>();
 
             krg.Add(new Krug(new Point(minX, minY), 0, 2));
-            
+
 
             timer1.Enabled = true;
         }
