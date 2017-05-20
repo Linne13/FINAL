@@ -12,6 +12,7 @@ namespace ConsoleApplication2
         static void Main(string[] args)
         {
             DirectoryInfo di = new DirectoryInfo(@"C:\Task");
+           
             FileInfo fi = new FileInfo("file1.txt");
             
             FileStream fs = new FileStream("file1.txt", FileMode.Open, FileAccess.Read);

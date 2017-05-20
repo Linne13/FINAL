@@ -17,7 +17,7 @@ namespace WindowsFormsApplication5
         Point prevPoint;
         List<Krug> krg;
         public int cnt = 0;
-        public Pen pen = new Pen(Color.Green);
+       
 
         public Form1()
         {
@@ -55,18 +55,18 @@ namespace WindowsFormsApplication5
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
 
-            
-            cnt++;
             prevPoint = e.Location;
-
+           
             int minX = Math.Min(prevPoint.X, e.Location.X);
             int minY = Math.Min(prevPoint.Y, e.Location.Y);
-            
+
+   
 
             krg = new List<Krug>();
 
             krg.Add(new Krug(new Point(minX, minY), 0, 2));
-
+            
+            
 
             timer1.Enabled = true;
         }
