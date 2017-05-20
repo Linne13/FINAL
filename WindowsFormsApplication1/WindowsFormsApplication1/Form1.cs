@@ -29,7 +29,25 @@ namespace WindowsFormsApplication1
 
 
         int p1 = 0;
-      
+
+
+        public static bool Prime(int a)
+        {
+            for (int i = 2; i < a * a; i++)
+            {
+                if (a % i == 0)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+
+            }
+
+            return false;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -48,21 +66,8 @@ namespace WindowsFormsApplication1
             button1.Text = "" + cnt1;
 
 
-            for (int i = 2; i < cnt1 * cnt1; i++)
-            {
-                if (cnt1 % i == 0)
-                {
-                    Console.Write("not prime");
-                    Console.ReadKey();
-                }
-                else
-                {
-                    Console.Write("Prime");
-                    Console.ReadKey();
-                }
-
-            }
-            if(cnt1 % 2 == 0)
+          
+            if(Prime(cnt1) == true)
             {
                 p1++;
             }
@@ -79,7 +84,7 @@ namespace WindowsFormsApplication1
             
             cnt2++;
             button2.Text = "" + cnt2;
-            if (cnt2 % 2 == 0)
+            if (Prime(cnt2) == true)
             {
                 p1++;
             }
@@ -93,7 +98,7 @@ namespace WindowsFormsApplication1
             
             cnt3++;
             button3.Text = "" + cnt3;
-            if (cnt3 % 2 == 0)
+            if (Prime(cnt3) == true)
             {
                 p1++;
             }
@@ -105,7 +110,7 @@ namespace WindowsFormsApplication1
         {
             cnt4++;
             button4.Text = "" + cnt4;
-            if (cnt4 % 2 == 0)
+            if (Prime(cnt4) == true)
             {
                 p1++;
             }
@@ -117,7 +122,7 @@ namespace WindowsFormsApplication1
         {
             cnt5++;
             button5.Text = "" + cnt5;
-            if (cnt5 % 2 == 0)
+            if (Prime(cnt5) == true)
             {
                 p1++;
             }
@@ -129,7 +134,7 @@ namespace WindowsFormsApplication1
         {
             cnt6++;
             button6.Text = "" + cnt6;
-            if (cnt6 % 2 == 0)
+            if (Prime(cnt6) == true)
             {
                 p1++;
             }
@@ -141,7 +146,7 @@ namespace WindowsFormsApplication1
         {
             cnt7++;
             button7.Text = "" + cnt7;
-            if (cnt7 % 2 == 0)
+            if (Prime(cnt7) == true)
             {
                 p1++;
             }
@@ -153,7 +158,7 @@ namespace WindowsFormsApplication1
         {
             cnt8++;
             button8.Text = "" + cnt8;
-            if (cnt8 % 2 == 0)
+            if (Prime(cnt8) == true)
             {
                 p1++;
             }
@@ -165,7 +170,7 @@ namespace WindowsFormsApplication1
         {
             cnt9++;
             button9.Text = "" + cnt9;
-            if (cnt9 % 2 == 0)
+            if (Prime(cnt9) == true)
             {
                 p1++;
             }
