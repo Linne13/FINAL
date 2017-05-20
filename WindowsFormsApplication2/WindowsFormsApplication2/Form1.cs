@@ -15,11 +15,12 @@ namespace WindowsFormsApplication2
 
         Graphics g;
 
-        int w;
-        int h;
         Point prevPoint;
         Pen pen = new Pen(Color.Blue);
 
+        List<Krug> krg;
+
+        Point location;
        
 
         public Form1()
@@ -41,43 +42,30 @@ namespace WindowsFormsApplication2
         {
             prevPoint = e.Location;
 
-          
             int minX = Math.Min(prevPoint.X, e.Location.X);
             int minY = Math.Min(prevPoint.Y, e.Location.Y);
 
+            krg = new List<Krug>();
+            krg.Add(new Krug(new Point(minX, minY), 90, 2));
+          
+          
             g.DrawEllipse(pen, minX, minY, 30, 30);
 
 
         }
 
 
-        public class Krug
-        {
-            public Point location;
-            public int x;
-            public int y;
+        
 
-            public Brush b = new SolidBrush(Color.Blue);
-
-            public Krug(Point p, int xx, int yy)
-            {
-                location = new Point();
-                location = p;
-                x = xx;
-                y = yy;
-            }
-
-            public void Move()
-            {
-                location.X += x;
-                location.Y += y;
-            }
-
-        }
+       
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             g.Clear(Color.White);
+
+ 
+            }
+
         }
     }
-}
+
