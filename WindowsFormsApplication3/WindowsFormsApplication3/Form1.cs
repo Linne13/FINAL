@@ -22,7 +22,7 @@ namespace WindowsFormsApplication3
         private void button1_Click(object sender, EventArgs e)
         {
             
-            label1.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
             label2.ForeColor = Color.Black;
             label3.ForeColor = Color.Black;
             label4.ForeColor = Color.Black;
@@ -42,67 +42,63 @@ namespace WindowsFormsApplication3
 
             if(cnt == 2)
             { label2.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
             }
 
             if (cnt == 3)
 
             { label3.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
             }
 
             if (cnt == 4)
 
             { label4.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
+            
             }
 
             if (cnt == 5)
 
             { label5.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
             }
 
             if (cnt == 6)
 
             { label6.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
+            
             }
 
             if (cnt == 7)
 
             { label7.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
             }
 
             if (cnt == 8)
 
             { label8.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
+           
             }
 
             if (cnt == 9)
 
             { label9.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
+           
             }
 
             if (cnt == 10)
 
             { label10.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
+           
             }
 
             if (cnt == 11)
 
             { label11.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
+           
             }
 
             if (cnt == 12)
 
             { label12.ForeColor = Color.Red;
-            label1.ForeColor = Color.Black;
+
             cnt = 0;
             }
 

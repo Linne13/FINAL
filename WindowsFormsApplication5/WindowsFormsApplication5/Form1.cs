@@ -30,13 +30,15 @@ namespace WindowsFormsApplication5
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            //krg = new List<Krug>();
+            krg = new List<Krug>();
 
-
-
-            //krg.Add(new Krug(new Point(200,200), 0, 2));
-
-            //timer1.Enabled = true;
+            krg.Add(new Krug(new Point(200,200), 0, 2));
+            krg.Add(new Krug(new Point(300,400), 0, 2));
+            krg.Add(new Krug(new Point(240,150), 0, 2));
+            krg.Add(new Krug(new Point(230,280), 0, 2));
+            timer1.Enabled = true;
+              
+        
         }
 
         private void timer1_Tick(object sender, EventArgs e)
