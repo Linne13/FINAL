@@ -13,7 +13,7 @@ namespace WindowsFormsApplication2
         public int x;
         public int y;
 
-        public Brush b = new SolidBrush(Color.Blue);
+        public Pen pen = new Pen(Color.Green);
 
         public Krug(Point p, int xx, int yy)
         {
@@ -27,6 +27,31 @@ namespace WindowsFormsApplication2
         {
             location.X += x;
             location.Y += y;
+
+            if (location.X < 2)
+            {
+                location.X = 500;
+            }
+
+            if (location.Y < 2)
+            {
+                location.Y = 500;
+            }
+
+            if (location.X  > 500)
+            {
+                location.X = 1;
+            }
+
+            if (location.Y > 500)
+            {
+                location.Y = 1;
+            }
+        }
+
+        public void Draw(Graphics g)
+        {
+            g.DrawEllipse(pen, location.X, location.Y, 30, 30);
         }
 
       
