@@ -22,7 +22,7 @@ namespace WindowsFormsApplication3
         private void button1_Click(object sender, EventArgs e)
         {
             
-            label1.ForeColor = Color.Black;
+            label1.ForeColor = Color.Red;
             label2.ForeColor = Color.Black;
             label3.ForeColor = Color.Black;
             label4.ForeColor = Color.Black;
@@ -41,52 +41,72 @@ namespace WindowsFormsApplication3
             { label1.ForeColor = Color.Red; }
 
             if(cnt == 2)
-            { label2.ForeColor = Color.Red; }
+            { label2.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            }
 
             if (cnt == 3)
 
-            { label3.ForeColor = Color.Red; }
+            { label3.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            }
 
             if (cnt == 4)
 
-            { label4.ForeColor = Color.Red; }
+            { label4.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            }
 
             if (cnt == 5)
 
-            { label5.ForeColor = Color.Red; }
+            { label5.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            }
 
             if (cnt == 6)
 
-            { label6.ForeColor = Color.Red; }
+            { label6.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            }
 
             if (cnt == 7)
 
-            { label7.ForeColor = Color.Red; }
+            { label7.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            }
 
             if (cnt == 8)
 
-            { label8.ForeColor = Color.Red; }
+            { label8.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            }
 
             if (cnt == 9)
 
-            { label9.ForeColor = Color.Red; }
+            { label9.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            }
 
             if (cnt == 10)
 
-            { label11.ForeColor = Color.Red; }
+            { label10.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            }
 
             if (cnt == 11)
 
-            { label12.ForeColor = Color.Red; }
+            { label11.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            }
 
             if (cnt == 12)
 
-            { label2.ForeColor = Color.Red;
-            
+            { label12.ForeColor = Color.Red;
+            label1.ForeColor = Color.Black;
+            cnt = 0;
             }
 
-            if(cnt >= 12)
-            { cnt = 0; }
+           
 
             
            

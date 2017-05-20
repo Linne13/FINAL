@@ -46,6 +46,22 @@ namespace WindowsFormsApplication1
             
             cnt1++;
             button1.Text = "" + cnt1;
+
+
+            for (int i = 2; i < cnt1 * cnt1; i++)
+            {
+                if (cnt1 % i == 0)
+                {
+                    Console.Write("not prime");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    Console.Write("Prime");
+                    Console.ReadKey();
+                }
+
+            }
             if(cnt1 % 2 == 0)
             {
                 p1++;
