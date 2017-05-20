@@ -162,6 +162,7 @@
             this.label11.Size = new System.Drawing.Size(19, 13);
             this.label11.TabIndex = 11;
             this.label11.Text = "11";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
             // 
@@ -171,6 +172,7 @@
             this.label12.Size = new System.Drawing.Size(19, 13);
             this.label12.TabIndex = 12;
             this.label12.Text = "12";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // Form1
             // 
